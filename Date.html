@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp Date</title>
+    <script src="mydate.js"></script>
+</head>
+<body>
+<script>
+    let date = new MyDate(2, 2, 2007);
+    let day = date.getDay();
+
+    let month = date.getMonth();
+
+    let year = date.getYear();
+    alert(day + "/" + month + "/" + year);
+
+    date.setDay(10);
+    date.setMonth(10);
+    date.setYear(2019);
+    alert(date.day + "/" + date.month + "/" + date.year);
+
+    date.setDate('21','05','2002');
+    alert(date.toString())
+
+</script>
+</body>
+</html>
